@@ -1,0 +1,23 @@
+// programawey.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include
+#include "conio.h"
+
+using namespace std;
+
+void main ()
+
+{
+int a,b,suma;
+cin>>a;
+cin>>b;
+suma= a+b;
+cout<<suma;
+getch();
+}
+@Franzcaa2
+
+Attach files by dragging & dropping or selecting them.
+Styling with Markdown is supported
