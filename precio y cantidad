@@ -1,0 +1,38 @@
+// precio y cantidad.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+void main()
+{
+	int a, b, c, d, e, f, g, h, i, j;
+	float total;
+	cout<<"ingresar producto 1"<<endl;
+	cin>>a;
+	cout<< "ingresar producto 2"<<endl;
+	cin>>b;
+	cout<< "ingresar producto 3"<<endl;
+	cin>>c;
+	cout<< "ingresar producto 4"<<endl;
+	cin>>d;
+	cout<< "ingresar producto 5"<<endl;
+	cin>>e;
+	cout<< "ingresar cantidad 1"<<endl;
+	cin>>f;
+	cout<< "ingresar cantidad 2"<<endl;
+	cin>>g;
+    cout<< "ingresar cantidad 3"<<endl;
+	cin>>h;
+	cout<< "ingresar cantidad 4"<<endl;
+	cin>>i;
+	cout<< "ingresar cantidad 5"<<endl;
+	cin>>j;
+
+	total=a*f+b*g+c*h+d*i+e*j;
+	cout<< "el total es"<<total<<endl;
+	getch ();
+
+}
