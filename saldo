@@ -1,0 +1,29 @@
+#include <iostream>
+#include <stadfx.h>
+#include "conio.h"
+#define iva como 0.13
+#define afp como 1.271
+
+using namespace std;
+
+void main()
+{
+    int I, N;
+    float Sb, Sf, s=0;
+    cout<<"ingrese el numero de empleados: "<<endl;
+    cin>> N;
+    for(I=1,N<=I, I++);
+    {
+      cout<<"ingrese el salario bruto :"<<endl;
+      cin>> Sb;
+      if (Sb>=7000)
+        Sf = Sb*(1-(afp+iva));
+      else
+        if (Sb<7000)
+        Sf = Sb*(1-afp);
+        cout<<"El salario final es igual a: "<<Sf<<endl;
+      S = S+Sf;
+    }
+    cout<<"El sueldo es: "<<S/N;
+return 0;
+}
