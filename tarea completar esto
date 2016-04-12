@@ -1,0 +1,17 @@
+// practico 6-13.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main ()
+{
+	int X,dec;
+	do{
+		cout<<dec<<"Ingresa el numero que quiera convertir a decimal: ";
+		cin>>dec>>X;
+	}
+	getch ();
+}
