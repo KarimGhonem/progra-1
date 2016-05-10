@@ -1,0 +1,66 @@
+// menu funciones.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+float area_cuadrado (float L);
+void potencia (float X, int Y, float &Z);
+int MCD (int a, int b);
+
+void main () {
+	int opcion, A, B, Y, R3, R1;
+	float L, X, Z;
+	system ("color 6B");
+	do{
+		cout<<"- - - - Menu - - - -"<<endl;
+		cout<<"1. Area del cuadrado"<<endl;
+		cout<<"2. Calcular potencia"<<endl;
+		cout<<"3. MCD"<<endl;
+		cout<<"A. Salir"<<endl;
+		cout<<"Ingrese lo que desea realizar"<<endl;
+		cin>>opcion;
+	}while(opcion>3 && opcion<0);
+	switch (opcion){
+	case 1: {cout<<"Ingrese la longitud de un lado"<<endl;
+		cin>>L;
+		R1=area_cuadrado(L);
+		cout<<"El area del cuadrado es: "<<R1<<endl;
+		break;}
+	case 2: {cout<<"Ingrese un numero: "<<endl;
+		cin>>X;
+		cout<<"Ingrese un exponente: "<<endl;
+		cin>>Y;
+		potencia (X,Y,Z);
+		cout<<"Elresultado de la potencias es: "<<Z<<endl;
+		break;}
+	case 3: {cout<<"Ingrese un numero: "<<endl;
+		cin>>A;
+		cout<<"Ingrese otro numero: "<<endl;
+		cin>>B;
+		R3= MCD(A,B);
+		cout<<"El MCD de los numeros es: "<<R3<<endl;
+		break;}
+	case 0: {cout<<"Salir"<<endl;
+		break;}
+	default:{cout<<"Opcion invalida, digite otro numero"<<endl;
+		break;}
+			getch();
+	}while(opcion>3 && opcion<0); 
+	getch();
+}
+float area_cuadrado (float L){
+	float R1;
+	R1=L*L;
+	return(R1);}
+int MCD (int A, int B){
+	if(A>B) swap(A,B);
+	return(B==0?A:MCD(A,A%B));}
+void potencia (float X,int Y, float &Z){
+	Z=1;
+	for(int i=1;i<=Y;i++)
+		Z=Z*X;
+}
