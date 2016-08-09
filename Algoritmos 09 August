@@ -1,0 +1,56 @@
+#include <iostream>
+#include <conio.h>
+#include <stdlib.h>
+
+using namespace std;
+
+int Karim(int a, int i);
+int Modulo(int x);
+
+void main ()
+{
+	system("color 3A");
+	int a, i=0, x;
+	do{
+		if (a<0)
+		{
+			cout<<"Su numero es negativo, debe ingresar un numero positivo para continuar"<<endl;
+			system("pause>null");
+		}
+	system ("cls");
+	cout<<"Ingrese un numero Positivo"<<endl;
+	cin>>a;
+	}while (a<0);
+	//switch(a)
+		case 1:
+			x=Karim(a,i);
+		case 2:
+			Modulo(n);
+		case 3: Salir
+
+
+	getch();
+}
+
+int Karim(int a, int i)
+{
+	while (a>0)
+	{
+			a=a/10;
+			i++;
+	}
+cout<< "Cantidad de digitos "<< i <<endl;
+return(i);
+}
+
+int Modulo(int n)
+{
+	int d,a=0;
+	while(n>0)
+	{
+		d=n%10;
+		a=a+d;
+		n=n/10
+	}
+	return (a);
+}
